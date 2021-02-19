@@ -8,10 +8,19 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <!-- Link to stylesheet for icon buttons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="log-activity">
+
+  <div class="previous-btn">
+    <a href="index.html" class="previous round">&#8249;</a>
+  </div>
+
   <h1 id="title">Log Activity</h1>
+
   <h3 class="question">What did you do?</h3>
     <div class="activities">
       <button type="button" class="activity-button">Jog</button>
@@ -21,12 +30,29 @@
       <button type="button" class="activity-button">Visit a friend</button>
       <button type="button" class="activity-button">Add +</button>
     </div>
+
   <h3 class="question">What was your mood after?</h3>
+    <div class="faces">
+      <input type="image" src="img/horrible.PNG" class="face-button" id="horrible-face"></input>
+      <input type="image" src="img/sad.PNG" class="face-button" id="sad-face"></input>
+      <input type="image" src="img/neutral.PNG" class="face-button" id="neutral-face"></input>
+      <input type="image" src="img/happy.PNG" class="face-button" id="happy-face"></input>
+      <input type="image" src="img/ecstatic.PNG" class="face-button" id="ecstatic-face"></input>
+    </div>
+
   <h3 class="question">Any physical symptoms?</h3>
     <div class="symptoms">
       <button type="button" class="symptom-button">Headache</button>
       <button type="button" class="symptom-button">Fatigue</button>
       <button type="button" class="symptom-button">Add +</button>
     </div>
+  
+  <div class="next-btn">
+    <a href="#" class="next round">&#8250;</a>
+  </div>
+  
+  <div class="home-btn">
+    <button class="btn" onclick="location.href='index.html'"><i class="fa fa-home fa-lg"></i> Home</button>
+  </div>
 </body>
 </html>
